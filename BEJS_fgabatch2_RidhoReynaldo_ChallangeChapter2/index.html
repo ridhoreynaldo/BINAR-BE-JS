@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Banking System</title>
+</head>
+<body>
+    <h1>Basic Banking System</h1>
+    <div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount">
+    </div>
+    <div>
+        <button onclick="deposit()">Deposit</button>
+        <button onclick="withdraw()">Withdraw</button>
+    </div>
+    <p id="message"></p>
+
+    <script src="banking_system.js"></script>
+    <script>
+        const myAccount = new BankAccount(100);
+
+        function deposit() {
+            const amount = parseFloat(document.getElementById('amount').value);
+            if (!isNaN(amount) && amount > 0) {
+                asyncDeposit(myAccount, amount);
+                document.getElementById('message').innerText = `Deposited ${amount}`;
+            } else {
+                document.getElementById('message').innerText = 'Invalid amount';
+            }
+        }
+
+        function withdraw() {
+            const amount = parseFloat(document.getElementById('amount').value);
+            if (!isNaN(amount) && amount > 0) {
+                asyncWithdraw(myAccount, amount);
+                document.getElementById('message').innerText = `Withdrew ${amount}`;
+            } else {
+                document.getElementById('message').innerText = 'Invalid amount';
+            }
+        }
+    </script>
+</body>
+</html>
