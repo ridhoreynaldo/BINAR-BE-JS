@@ -1,0 +1,27 @@
+# npm init -y
+# npm install express prisma @prisma/client
+# npx prisma init
+
+//EDIT// 
+-prisma/scheme.prisma
+-Database Migration
+
+model User {
+  id    String @id @default(uuid()) @db.Uuid
+  name  String
+  email String @unique
+}
+
+//EDIT//
+-.env
+-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/db_tes?schema=public"
+
+//CREATE//
+db_tes
+
+
+# npx prisma migrate dev --name init
+# node index.js
+
+
+npm install dotenv
