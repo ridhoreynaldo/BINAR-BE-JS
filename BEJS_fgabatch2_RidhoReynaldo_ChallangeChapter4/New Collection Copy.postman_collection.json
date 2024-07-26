@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "43b17a1c-004d-4c01-bae6-c10578199bf5",
+		"name": "New Collection Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23840542",
+		"_collection_link": "https://interstellar-station-123084.postman.co/workspace/New-Team-Workspace~ea3e4bb6-0647-4564-abc5-dcc3efd71f40/collection/23840542-43b17a1c-004d-4c01-bae6-c10578199bf5?action=share&source=collection_link&creator=23840542"
+	},
+	"item": [
+		{
+			"name": "READ ALL NASABAH",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Edoss2\",\r\n  \"email\": \"edoss2@gmaisl.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/api/v1/nasabahs"
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE NEW NASABAH",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nama\": \"John Doe\",\r\n  \"no_telp\": \"+62123456789\",\r\n  \"email\": \"johndoe@example.com\",\r\n  \"alamat\": \"123 Main Street\",\r\n  \"tgl_lahir\": \"1990-01-01T00:00:00Z\"  // Format tanggal yang valid (ISO 8601)\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/api/v1/nasabahs"
+			},
+			"response": []
+		},
+		{
+			"name": "READ NASABAH BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/api/v1/nasabahs/3a5584cd-9535-42ea-80aa-00fba2476995"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE NASABAH BY ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nama\": \"John Does\",\r\n  \"no_telp\": \"+62123456789\",\r\n  \"email\": \"johndoe@example.com\",\r\n  \"alamat\": \"123 Main Street\",\r\n  \"tgl_lahir\": \"1990-01-01T00:00:00Z\"  // Format tanggal yang valid (ISO 8601)\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/api/v1/nasabahs/d7e8107a-75b1-4d8b-acd6-26333632706b"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE NASABAH BY ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3000/api/v1/nasabahs/d7e8107a-75b1-4d8b-acd6-26333632706b"
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE AKUN BY NASABAH ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipe_akun\": \"Saving\",\r\n    \"no_akun\": \"123456789\",\r\n    \"password\": \"password123\",\r\n    \"saldo\": 1000.00,\r\n    \"id_nasabah\": \"3a5584cd-9535-42ea-80aa-00fba2476995\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/v1/akuns"
+			},
+			"response": []
+		},
+		{
+			"name": "READ AKUN BY NASABAH ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/v1/akuns/nasabah/3a5584cd-9535-42ea-80aa-00fba2476995"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE AKUN BY ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipe_akun\": \"Saving\",\r\n    \"no_akun\": \"123456789\",\r\n    \"password\": \"password123\",\r\n    \"saldo\": 21000.00,\r\n    \"id_nasabah\": \"3a5584cd-9535-42ea-80aa-00fba2476995\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/api/v1/akuns/6f8ed2fd-3001-459c-a318-9d83d4ec95c2"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE AKUN BY ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3000/api/v1/akuns/6f8ed2fd-3001-459c-a318-9d83d4ec95c2"
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE TRANSAKSI BY  ID AKUN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id_akun\": \"6f8ed2fd-3001-459c-a318-9d83d4ec95c2\",\r\n  \"tgl_transaksi\": \"2024-07-23T10:00:00Z\",\r\n  \"jumlah\": 150.75,\r\n  \"tipe_transaksi\": \"Debit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/v1/transaksis"
+			},
+			"response": []
+		},
+		{
+			"name": "READ TRANSAKSI BY AKUN ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/v1/transaksis/akun/6f8ed2fd-3001-459c-a318-9d83d4ec95c2"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE TRANSAKSI BY ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id_akun\": \"6f8ed2fd-3001-459c-a318-9d83d4ec95c2\",\r\n  \"tgl_transaksi\": \"2024-07-23T10:00:00Z\",\r\n  \"jumlah\": 725.75,\r\n  \"tipe_transaksi\": \"Debit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/api/v1/transaksis/f4745c4e-4a08-44f4-ab00-ef4ba62d3415"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE TRANSAKSI BY ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3000/api/v1/transaksis/c56b6081-aefa-45ea-ab94-e65da865fe98"
+			},
+			"response": []
+		}
+	]
+}

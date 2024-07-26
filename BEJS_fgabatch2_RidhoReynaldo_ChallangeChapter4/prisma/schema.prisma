@@ -1,0 +1,44 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Nasabah {
+  id          String @id @default(uuid())
+  nama        String
+  no_telp     String
+  email       String @unique
+  alamat      String
+  tgl_lahir   DateTime
+  akuns       Akun[] // Relasi one-to-many dengan model 
+}
+
+model Akun {
+  id            String  @id @default(uuid())
+  id_nasabah    String    // Kunci asing untuk relasi dengan User
+  tipe_akun     String
+  no_akun       String  @unique
+  password      String
+  saldo         Decimal @default(0.00)
+  nasabah       Nasabah  @relation(fields: [id_nasabah], references: [id])
+  transaksis    Transaksi[] // Relasi one-to-many dengan model
+}
+
+model Transaksi {
+  id              String  @id @default(uuid())
+  id_akun         String    // Kunci asing untuk relasi dengan
+  tgl_transaksi   DateTime @default(now())
+  jumlah          Decimal @default(0.00)
+  tipe_transaksi  String
+  akun            Akun  @relation(fields: [id_akun], references: [id])
+}
