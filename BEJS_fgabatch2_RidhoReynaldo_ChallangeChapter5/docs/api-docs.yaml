@@ -1,0 +1,417 @@
+openapi: 3.0.0
+info:
+  title: API Documentation
+  version: 1.0.0
+  description: API documentation for Nasabah, Profile, BankAkun, and Transaksi models.
+
+paths:
+  # Nasabah Endpoints
+  /nasabah:
+    get:
+      summary: Get all Nasabah
+      responses:
+        '200':
+          description: A list of Nasabah
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Nasabah'
+
+    post:
+      summary: Create a new Nasabah
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Nasabah'
+      responses:
+        '201':
+          description: Nasabah created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Nasabah'
+
+  /nasabah/{id}:
+    get:
+      summary: Get a Nasabah by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A single Nasabah
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Nasabah'
+
+    put:
+      summary: Update a Nasabah
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Nasabah'
+      responses:
+        '200':
+          description: Nasabah updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Nasabah'
+
+    delete:
+      summary: Delete a Nasabah
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Nasabah deleted
+
+  # Profile Endpoints
+  /profile:
+    get:
+      summary: Get all Profiles
+      responses:
+        '200':
+          description: A list of Profiles
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Profile'
+
+    post:
+      summary: Create a new Profile
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Profile'
+      responses:
+        '201':
+          description: Profile created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Profile'
+
+  /profile/{id}:
+    get:
+      summary: Get a Profile by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A single Profile
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Profile'
+
+    put:
+      summary: Update a Profile
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Profile'
+      responses:
+        '200':
+          description: Profile updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Profile'
+
+    delete:
+      summary: Delete a Profile
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Profile deleted
+
+  # BankAkun Endpoints
+  /bankAkun:
+    get:
+      summary: Get all BankAkun
+      responses:
+        '200':
+          description: A list of BankAkun
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/BankAkun'
+
+    post:
+      summary: Create a new BankAkun
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BankAkun'
+      responses:
+        '201':
+          description: BankAkun created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BankAkun'
+
+  /bankAkun/{id}:
+    get:
+      summary: Get a BankAkun by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A single BankAkun
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BankAkun'
+
+    put:
+      summary: Update a BankAkun
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BankAkun'
+      responses:
+        '200':
+          description: BankAkun updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BankAkun'
+
+    delete:
+      summary: Delete a BankAkun
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: BankAkun deleted
+
+  # Transaksi Endpoints
+  /transaksi:
+    get:
+      summary: Get all Transaksi
+      responses:
+        '200':
+          description: A list of Transaksi
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Transaksi'
+
+    post:
+      summary: Create a new Transaksi
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Transaksi'
+      responses:
+        '201':
+          description: Transaksi created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Transaksi'
+
+  /transaksi/{id}:
+    get:
+      summary: Get a Transaksi by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A single Transaksi
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Transaksi'
+
+    put:
+      summary: Update a Transaksi
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Transaksi'
+      responses:
+        '200':
+          description: Transaksi updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Transaksi'
+
+    delete:
+      summary: Delete a Transaksi
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Transaksi deleted
+
+components:
+  schemas:
+    Nasabah:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        email:
+          type: string
+        password:
+          type: string
+        profile:
+          $ref: '#/components/schemas/Profile'
+        bankAkuns:
+          type: array
+          items:
+            $ref: '#/components/schemas/BankAkun'
+      required:
+        - id
+        - email
+        - password
+
+    Profile:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        nasabahId:
+          type: string
+        name:
+          type: string
+        nasabah:
+          $ref: '#/components/schemas/Nasabah'
+      required:
+        - id
+        - nasabahId
+        - name
+
+    BankAkun:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        nasabahId:
+          type: string
+        accountNo:
+          type: string
+        balance:
+          type: number
+          format: float
+        nasabah:
+          $ref: '#/components/schemas/Nasabah'
+        transaksi:
+          type: array
+          items:
+            $ref: '#/components/schemas/Transaksi'
+      required:
+        - id
+        - nasabahId
+        - accountNo
+
+    Transaksi:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        bankAkunId:
+          type: string
+        amount:
+          type: number
+          format: float
+        description:
+          type: string
+        bankAkun:
+          $ref: '#/components/schemas/BankAkun'
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - bankAkunId
+        - amount

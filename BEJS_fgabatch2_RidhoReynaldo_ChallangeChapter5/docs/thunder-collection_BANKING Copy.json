@@ -1,0 +1,418 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "BANKING Copy",
+    "collectionId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+    "dateExported": "2024-08-09T16:13:27.701Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "15ce83da-50c6-4578-af87-08cea8bb572c",
+            "name": "NASABAH",
+            "containerId": "",
+            "created": "2024-08-09T04:48:45.163Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "54e5ca0b-75a7-4a33-84f4-7a46d7541f41",
+            "name": "PROFILE",
+            "containerId": "",
+            "created": "2024-08-09T06:44:50.858Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "c4136c86-c0d6-4311-a3c4-0dafe170ff78",
+            "name": "BANK AKUN",
+            "containerId": "",
+            "created": "2024-08-09T04:48:45.164Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "603a0a51-f7ff-4ff7-806c-3fb3a89ca26c",
+            "name": "TRANSAKSI",
+            "containerId": "",
+            "created": "2024-08-09T04:48:45.165Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "963eca4b-a0f1-493c-8c05-580a45157ef4",
+            "name": "LOGIN",
+            "containerId": "",
+            "created": "2024-08-09T04:49:33.571Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "df1bc689-ed05-4b0f-a120-fd577aadbd85",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "15ce83da-50c6-4578-af87-08cea8bb572c",
+            "name": "READ ALL",
+            "url": "localhost:3000/nasabah",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-08-09T04:48:45.163Z",
+            "modified": "2024-08-09T15:14:57.079Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiJmNTI1NDg0Zi1jNzZhLTQ2ZmMtODE0Yi01NDI0M2VjZTQyOWMiLCJpYXQiOjE3MjMyMTY0ODIsImV4cCI6MTcyMzIyMDA4Mn0.U72gqFKFh10cbJjVRKdsFLI2h2RSKDqDtHdpEjtGCRU"
+                }
+            ]
+        },
+        {
+            "_id": "a13b1789-62c7-4e34-8ccf-f6f8d4e819df",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "c4136c86-c0d6-4311-a3c4-0dafe170ff78",
+            "name": "READ BY NASABAH ID",
+            "url": "localhost:3000/bankAkun/f7b4695e-3ebe-4876-9565-124c283102ec",
+            "method": "GET",
+            "sortNum": 17500,
+            "created": "2024-08-09T05:36:13.181Z",
+            "modified": "2024-08-09T14:59:34.859Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiJlM2M1YzY3MS1mYmMyLTQ4ZDYtYTViYy1iMWJkMmE2NDRkMjgiLCJpYXQiOjE3MjMyMTU1NjYsImV4cCI6MTcyMzIxOTE2Nn0.JrH1x6PXgej9JBOrY0Mxaat32LZ2iia6BASwAVR3hr0"
+                }
+            ]
+        },
+        {
+            "_id": "3eb8030b-c328-4be0-b567-df0951f2386a",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "15ce83da-50c6-4578-af87-08cea8bb572c",
+            "name": "READ BY ID",
+            "url": "localhost:3000/nasabah/cfb55e31-b34f-4a93-a3c8-5f97bebad250",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-08-09T04:48:45.164Z",
+            "modified": "2024-08-09T05:32:56.085Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiJjZmI1NWUzMS1iMzRmLTRhOTMtYTNjOC01Zjk3YmViYWQyNTAiLCJpYXQiOjE3MjMxODE1NDIsImV4cCI6MTcyMzE4NTE0Mn0.7el32XKPXhAZ9xTXLzncssm8kxuLKedaM8-r2oohzi8"
+                }
+            ]
+        },
+        {
+            "_id": "f113cb7b-88f1-4799-9e8b-2949228a79de",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "c4136c86-c0d6-4311-a3c4-0dafe170ff78",
+            "name": "READ BY BANK AKUN ID",
+            "url": "localhost:3000/bankAkun/akun/26559da7-db67-4b20-93d7-f9308420539a",
+            "method": "GET",
+            "sortNum": 26250,
+            "created": "2024-08-09T04:48:45.169Z",
+            "modified": "2024-08-09T12:29:49.642Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiJmN2I0Njk1ZS0zZWJlLTQ4NzYtOTU2NS0xMjRjMjgzMTAyZWMiLCJpYXQiOjE3MjMyMDQ5MjUsImV4cCI6MTcyMzIwODUyNX0.SwZFicxHvE0gfInYBoOYtz36yPXdBMVSfcFPbGtM8a0"
+                }
+            ]
+        },
+        {
+            "_id": "ed067a4a-ed51-4f79-8354-0778afc5c587",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "c4136c86-c0d6-4311-a3c4-0dafe170ff78",
+            "name": "CREATE BY NASABAH ID",
+            "url": "localhost:3000/bankAkun",
+            "method": "POST",
+            "sortNum": 35000,
+            "created": "2024-08-09T04:48:45.166Z",
+            "modified": "2024-08-09T15:15:20.505Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiJmNTI1NDg0Zi1jNzZhLTQ2ZmMtODE0Yi01NDI0M2VjZTQyOWMiLCJpYXQiOjE3MjMyMTY0ODIsImV4cCI6MTcyMzIyMDA4Mn0.U72gqFKFh10cbJjVRKdsFLI2h2RSKDqDtHdpEjtGCRU"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"accountNo\": \"987654321s\",\n  \"balance\": 500\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "cc1bb06f-1046-42f2-a56f-fe7a0a7d95de",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "15ce83da-50c6-4578-af87-08cea8bb572c",
+            "name": "UPDATE BY ID",
+            "url": "localhost:3000/nasabah/cfb55e31-b34f-4a93-a3c8-5f97bebad250",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-08-09T04:48:45.167Z",
+            "modified": "2024-08-09T05:33:03.795Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiIzYmE0ZmM4MC1lZDQ0LTRiYzAtYTg1Zi0zYzNmMTAyM2ZkZmEiLCJpYXQiOjE3MjMxODA3OTgsImV4cCI6MTcyMzE4NDM5OH0.zp6ESNMY5KeeiOnzMMeUNURCowb2pJAXWc6gnSbaBo8"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"john.doe@example.cosamaass\",\n  \"password\": \"securepasswordssasdasdss\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7a302d65-abcf-4cf3-b23d-b6466336c0bc",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "15ce83da-50c6-4578-af87-08cea8bb572c",
+            "name": "DELETE BY ID",
+            "url": "localhost:3000/nasabah/cfb55e31-b34f-4a93-a3c8-5f97bebad250",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-08-09T04:48:45.168Z",
+            "modified": "2024-08-09T05:33:11.686Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiJjM2QzMjE3MC1iNjYyLTQwMjUtOTljYS1lOTcyNjk0MjUwYWYiLCJpYXQiOjE3MjMxODAwNzQsImV4cCI6MTcyMzE4MzY3NH0.s3v595K8ib-R1N_JwO1FpR4f9nYUw0SvBiXU0rtBqkM"
+                }
+            ]
+        },
+        {
+            "_id": "c9b117d1-da07-4819-8f02-b0e0e446df2d",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "c4136c86-c0d6-4311-a3c4-0dafe170ff78",
+            "name": "UPDATE BY ID",
+            "url": "localhost:3000/bankAkun/31764816-0ec3-4a82-8c87-7091ebcb8c06",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-08-09T04:48:45.170Z",
+            "modified": "2024-08-09T12:20:33.793Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiJmN2I0Njk1ZS0zZWJlLTQ4NzYtOTU2NS0xMjRjMjgzMTAyZWMiLCJpYXQiOjE3MjMyMDQ5MjUsImV4cCI6MTcyMzIwODUyNX0.SwZFicxHvE0gfInYBoOYtz36yPXdBMVSfcFPbGtM8a0"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"balance\": 5002\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "198fc635-f124-4b66-8945-ea779e921bb2",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "c4136c86-c0d6-4311-a3c4-0dafe170ff78",
+            "name": "DELETE BY ID",
+            "url": "localhost:3000/bankAkun/31764816-0ec3-4a82-8c87-7091ebcb8c06",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-08-09T04:48:45.171Z",
+            "modified": "2024-08-09T12:24:14.066Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiJmN2I0Njk1ZS0zZWJlLTQ4NzYtOTU2NS0xMjRjMjgzMTAyZWMiLCJpYXQiOjE3MjMyMDQ5MjUsImV4cCI6MTcyMzIwODUyNX0.SwZFicxHvE0gfInYBoOYtz36yPXdBMVSfcFPbGtM8a0"
+                }
+            ]
+        },
+        {
+            "_id": "90b66796-f670-4052-8958-29ec7cf82d35",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "603a0a51-f7ff-4ff7-806c-3fb3a89ca26c",
+            "name": "READ BY BANK AKUN ID",
+            "url": "http://localhost:3000/transaksi/26559da7-db67-4b20-93d7-f9308420539a",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-08-09T04:48:45.173Z",
+            "modified": "2024-08-09T15:12:19.275Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiJmNTI1NDg0Zi1jNzZhLTQ2ZmMtODE0Yi01NDI0M2VjZTQyOWMiLCJpYXQiOjE3MjMyMTYzMzIsImV4cCI6MTcyMzIxOTkzMn0.QZxbVG7EkPSw1UKMg__yog248DSInnALlwc8zoYghOo"
+                }
+            ]
+        },
+        {
+            "_id": "aad12433-1a3a-4b0d-a168-fea20983fe45",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "603a0a51-f7ff-4ff7-806c-3fb3a89ca26c",
+            "name": "CREATE TRANSAKSI BY AKUN ID",
+            "url": "http://localhost:3000/transaksi/",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-08-09T04:48:45.174Z",
+            "modified": "2024-08-09T15:16:22.765Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiJmNTI1NDg0Zi1jNzZhLTQ2ZmMtODE0Yi01NDI0M2VjZTQyOWMiLCJpYXQiOjE3MjMyMTY0NDcsImV4cCI6MTcyMzIyMDA0N30.lxHT73JHxXmVNLWpnIGXL6f1pYeIiFYr81ud0X204lk"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"bankAkunId\": \"41bdef83-f4fe-4201-b285-b79bb5f1044c\",\n  \"amount\": 100.00,\n  \"description\": \"Payment for service\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "efe36300-aa46-4396-9b34-351e7fb78188",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "603a0a51-f7ff-4ff7-806c-3fb3a89ca26c",
+            "name": "UPDATE TRANSAKSI BY ID",
+            "url": "localhost:3000/api/v1/transaksis/f4745c4e-4a08-44f4-ab00-ef4ba62d3415",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2024-08-09T04:48:45.175Z",
+            "modified": "2024-08-09T04:48:45.175Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"id_akun\": \"6f8ed2fd-3001-459c-a318-9d83d4ec95c2\",\r\n  \"tgl_transaksi\": \"2024-07-23T10:00:00Z\",\r\n  \"jumlah\": 725.75,\r\n  \"tipe_transaksi\": \"Debit\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "40547297-b2f9-42cc-bdcd-2e2b05018e5d",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "603a0a51-f7ff-4ff7-806c-3fb3a89ca26c",
+            "name": "DELETE TRANSAKSI BY ID",
+            "url": "http://localhost:3000/transaksi/f341e20d-127e-4091-bfca-71d454f93994",
+            "method": "DELETE",
+            "sortNum": 150000,
+            "created": "2024-08-09T04:48:45.176Z",
+            "modified": "2024-08-09T12:34:40.677Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiJmN2I0Njk1ZS0zZWJlLTQ4NzYtOTU2NS0xMjRjMjgzMTAyZWMiLCJpYXQiOjE3MjMyMDQ5MjUsImV4cCI6MTcyMzIwODUyNX0.SwZFicxHvE0gfInYBoOYtz36yPXdBMVSfcFPbGtM8a0"
+                }
+            ]
+        },
+        {
+            "_id": "aa466ba5-0fe3-4d88-abf4-916bd02ff723",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "963eca4b-a0f1-493c-8c05-580a45157ef4",
+            "name": "LOGIN",
+            "url": "localhost:3000/auth/login",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2024-08-09T04:50:41.847Z",
+            "modified": "2024-08-09T13:45:49.224Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"john.doe@example.com\",\n  \"password\": \"securepassword\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "101099cb-db1a-4668-b528-aae4f7066d15",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "963eca4b-a0f1-493c-8c05-580a45157ef4",
+            "name": "CREATE NASABAH",
+            "url": "localhost:3000/auth/register",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2024-08-09T04:51:39.782Z",
+            "modified": "2024-08-09T13:45:43.906Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"john.doe@example.com\",\n  \"password\": \"securepassword\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "edce694f-723b-4671-9468-e49c8c3d49bd",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "54e5ca0b-75a7-4a33-84f4-7a46d7541f41",
+            "name": "READ BY NASABAH ID",
+            "url": "localhost:3000/profile/f7b4695e-3ebe-4876-9565-124c283102ec",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2024-08-09T06:45:30.759Z",
+            "modified": "2024-08-09T12:02:34.078Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiJmN2I0Njk1ZS0zZWJlLTQ4NzYtOTU2NS0xMjRjMjgzMTAyZWMiLCJpYXQiOjE3MjMyMDQ5MjUsImV4cCI6MTcyMzIwODUyNX0.SwZFicxHvE0gfInYBoOYtz36yPXdBMVSfcFPbGtM8a0"
+                }
+            ]
+        },
+        {
+            "_id": "f951151e-80be-4993-8655-48edec19d372",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "54e5ca0b-75a7-4a33-84f4-7a46d7541f41",
+            "name": "CREATE BY NASABAH ID",
+            "url": "localhost:3000/profile/",
+            "method": "POST",
+            "sortNum": 200000,
+            "created": "2024-08-09T06:47:44.358Z",
+            "modified": "2024-08-09T14:39:19.865Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiIwZjkwNGQ5My0yZTA3LTQ3OWYtOTAwYi1hNGM5YWNmZWNlNDQiLCJpYXQiOjE3MjMyMTQzNDUsImV4cCI6MTcyMzIxNzk0NX0.Sh5wgSqyFd7SIVhKwYJ3GyuFT32n4p_rU-8T2eigkNQ"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"rey\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "0887412e-3b2c-4c0a-977e-c527dc6aa3c2",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "54e5ca0b-75a7-4a33-84f4-7a46d7541f41",
+            "name": "UPDATE BY NASABAH ID",
+            "url": "localhost:3000/profile/f7b4695e-3ebe-4876-9565-124c283102ec",
+            "method": "PUT",
+            "sortNum": 210000,
+            "created": "2024-08-09T06:57:23.438Z",
+            "modified": "2024-08-09T12:12:46.281Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiJmN2I0Njk1ZS0zZWJlLTQ4NzYtOTU2NS0xMjRjMjgzMTAyZWMiLCJpYXQiOjE3MjMyMDQ5MjUsImV4cCI6MTcyMzIwODUyNX0.SwZFicxHvE0gfInYBoOYtz36yPXdBMVSfcFPbGtM8a0"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"securepasswordssasdasdss\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0853916c-08ac-41fd-b357-fbcaa87e0cdf",
+            "colId": "5f4752b2-47fb-43ed-88f8-c6e88da22fc7",
+            "containerId": "603a0a51-f7ff-4ff7-806c-3fb3a89ca26c",
+            "name": "READ BY ID",
+            "url": "localhost:3000/transaksi/41bdef83-f4fe-4201-b285-b79bb5f1044c",
+            "method": "GET",
+            "sortNum": 220000,
+            "created": "2024-08-09T15:10:44.781Z",
+            "modified": "2024-08-09T15:16:12.137Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXNhYmFoSWQiOiJmNTI1NDg0Zi1jNzZhLTQ2ZmMtODE0Yi01NDI0M2VjZTQyOWMiLCJpYXQiOjE3MjMyMTY0NDcsImV4cCI6MTcyMzIyMDA0N30.lxHT73JHxXmVNLWpnIGXL6f1pYeIiFYr81ud0X204lk"
+                }
+            ]
+        }
+    ],
+    "ref": "Dn7QDClUlq9Pfh_whvuhfC0nEBxElKo8P2GlnnDTCztyTsCs6pgvAoJj5oSbyrT3E3N_ypUuxTVuSEbj_VpP-Q"
+}
